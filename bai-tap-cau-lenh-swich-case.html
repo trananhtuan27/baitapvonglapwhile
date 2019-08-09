@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="number"id="sothang"/>
+    <button name="button" type="button"onclick="checkMonth()">Tính số ngày</button>
+    <p id="result"></p>
+
+        <script>
+            function checkMonth() {
+               let number = Number(document.getElementById("sothang").value);
+                let numberday;
+                switch (number){
+                    case 1:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 2:
+                        numberday="Có 28 hoặc29 ngày"
+                        break;
+                    case 3:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 4:
+                        numberday="Có 30 ngày"
+                        break;
+                    case 5:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 6:
+                        numberday="Có 30 ngày"
+                        break;
+                    case 7:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 8:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 9:
+                        numberday="Có 30 ngày"
+                        break;
+                    case 10:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 11:
+                        numberday="Có 31 ngày"
+                        break;
+                    case 12:
+                        numberday="Có 31 ngày"
+                        break;
+                    default:
+                        numberday="không ra kết quả"
+                }
+                document.getElementById("result").innerHTML = numberday;
+            }
+        </script>
+
+</form>
+
+</body>
+</html>
